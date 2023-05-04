@@ -21,11 +21,7 @@ export default {
       type: Number,
       default: 100,
       validator(value) {
-    if(value > 100){
-        console.log('es mayor a 100')
-    }else {
-        console.log('no es mayor a 100 ')
-    }
+        return value > 0;
       },
     },
   },
