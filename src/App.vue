@@ -1,15 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+<Counter title="Entraron" :start = '101'/>
+<!-- <Counter title="Salieron"/> -->
 
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+import Counter from './components/Counter.vue';
+
+
 
 @Options({
+  
   components: {
-
+   Counter
   },
 })
 export default class App extends Vue {}
